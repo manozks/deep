@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Marketing Pvt Ltd - Corporate Profile</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Load Lucide Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            black: '#111111',
+                            dark: '#222222',
+                            gray: '#7A7A7A',
+                            light: '#F5F5F5',
+                            gold: '#D4AF37',
+                            accent: '#8B7355'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles (Print & Typography overrides) -->
+    <style>
+        /* PDF/Print Optimization */
+        @media print {
+            body { background: white; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .page-break { page-break-after: always; }
+            .no-print { display: none; }
+            .page-container {
+                box-shadow: none !important;
+                margin: 0 !important;
+                width: 100% !important;
+                height: 100% !important;
+                page-break-inside: avoid;
+            }
+            @page { margin: 0; size: A4 portrait; }
+        }
+        
+        /* Base Styling */
+        body { background-color: #e5e7eb; color: #111111; }
+        
+        .page-container {
+            width: 210mm;
+            min-height: 297mm; /* A4 Portrait */
+            background: white;
+            margin: 2rem auto;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gold-line {
+            height: 2px;
+            background: linear-gradient(90deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Controls for web view -->
+   <!--  <div class="fixed top-4 right-4 z-50 no-print flex gap-2">
+        <button onclick="window.print()" class="bg-brand-black text-white px-6 py-2 rounded shadow hover:bg-gray-800 transition text-sm font-medium flex items-center gap-2">
+            <i data-lucide="printer" class="w-4 h-4"></i> Print / Save PDF
+        </button>
+    </div> -->
+
+    <!-- PAGE 1: Cover Page -->
+    <div class="page-container page-break flex flex-col relative">
+        <div class="p-4 flex justify-between items-start z-10">
+            <div class="w-48 bg-white p-4 flex items-center justify-center">
+                <img src="images/logo.png" alt="Deep Marketing Logo" class="w-full h-auto object-contain" onerror="this.src='https://placehold.co/400x150/ffffff/111111?text=Deep+Marketing'">
+            </div>
+            <div class="text-right">
+                <p class="text-xs uppercase tracking-[0.2em] font-semibold text-brand-dark">Company Profile</p>
+                <p class="text-xs text-brand-gray mt-1">2026 Edition</p>
+            </div>
+        </div>
+
+        <div class="flex-grow relative mx-6 mb-6 flex items-end">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop" alt="Luxury Architecture" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            
+            <div class="relative z-10 w-full p-12 text-white">
+                <div class="gold-line w-24 mb-8"></div>
+                <h1 class="font-serif text-6xl md:text-7xl font-bold leading-tight mb-4">
+                    DEEP<br>MARKETING
+                </h1>
+                <p class="font-sans text-xl font-light tracking-wide text-gray-200">Elevating Spaces with Luxury Sanitaryware & Architectural Solutions</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 2: Introduction & About -->
+    <div class="page-container page-break flex flex-col">
+        <div class="flex-1 grid grid-cols-12 h-full">
+            <div class="col-span-7 p-16 flex flex-col justify-center relative">
+                <div class="absolute top-16 left-16 text-brand-gray/20 font-serif text-[120px] leading-none">01</div>
+                
+                <div class="relative z-10 mt-12">
+                    <p class="text-brand-gold font-semibold uppercase tracking-[0.15em] text-sm mb-4">Introduction</p>
+                    <h2 class="font-serif text-4xl text-brand-black leading-tight mb-8">Crafting experiences<br>through exceptional design.</h2>
+                    
+                    <div class="space-y-6 text-brand-gray font-light text-[15px] leading-relaxed">
+                        <p class="text-brand-black font-medium text-lg">
+                            "Our commitment is to transform ordinary spaces into extraordinary environments."
+                        </p>
+                        <div class="w-12 h-[1px] bg-brand-gray/30 my-6"></div>
+                        <p>
+                            Deep Marketing Pvt Ltd stands at the forefront of luxury sanitaryware and architectural solutions in Nepal. Based in the heart of Kathmandu, we have established ourselves as the premier destination for discerning clients seeking excellence in design, functionality, and durability.
+                        </p>
+                        <p>
+                            Since our inception, our focus has been unyielding: to curate and provide world-class products that redefine modern living and commercial spaces. We bridge the gap between global innovation and local architectural needs.
+                        </p>
+                    </div>
+
+                    <div class="mt-12 grid grid-cols-2 gap-8 border-t border-brand-light pt-8">
+                        <div>
+                            <p class="text-3xl font-serif text-brand-black mb-1">25+</p>
+                            <p class="text-xs uppercase tracking-widest text-brand-gray">Years Experience</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-serif text-brand-black mb-1">500+</p>
+                            <p class="text-xs uppercase tracking-widest text-brand-gray">Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-5 relative bg-brand-light h-full">
+                <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1973&auto=format&fit=crop" alt="Modern Bathroom" class="absolute inset-0 w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 3: Vision, Mission & Values -->
+    <div class="page-container page-break bg-brand-black text-white flex">
+        
+        <!-- Left Side: Sensor Faucet Image -->
+        <div class="w-2/5 relative hidden md:block border-r border-white/10">
+            <!-- Sleek Modern Sensor Faucet Image -->
+            <img src="https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?q=80&w=2012&auto=format&fit=crop" alt="Modern Sensor Faucet" class="absolute inset-0 w-full h-full object-cover opacity-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-transparent to-transparent opacity-80"></div>
+            
+            <!-- Numbering Overlay -->
+            <div class="absolute top-12 left-12 text-white/20 font-serif text-[80px] leading-none">02</div>
+            <div class="absolute bottom-12 left-12 pr-8">
+                <p class="text-xs uppercase tracking-[0.2em] text-brand-gold mb-2">Smart Technology</p>
+                <p class="font-serif text-lg text-white">Advanced Sensor<br>Faucets</p>
+            </div>
+        </div>
+
+        <!-- Right Side: Content -->
+        <div class="w-full md:w-3/5 p-12 md:p-16 flex flex-col justify-center relative">
+            
+            <div class="border-b border-white/10 pb-6 mb-10 flex justify-between items-end">
+                <div>
+                    <p class="text-brand-gold font-semibold uppercase tracking-[0.15em] text-sm mb-2">Corporate Identity</p>
+                    <h2 class="font-serif text-4xl">Vision & Values</h2>
+                </div>
+            </div>
+
+            <!-- Vision & Mission -->
+            <div class="grid grid-cols-1 gap-10 mb-12">
+                <div class="relative">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i data-lucide="eye" class="w-6 h-6 text-brand-gold opacity-80"></i>
+                        <h3 class="font-serif text-2xl">Our Vision</h3>
+                    </div>
+                    <p class="text-gray-400 font-light leading-relaxed text-sm pr-4">
+                        To be the most trusted and innovative provider of luxury architectural and sanitary solutions in South Asia, setting new standards for quality, aesthetics, and sustainable living.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i data-lucide="target" class="w-6 h-6 text-brand-gold opacity-80"></i>
+                        <h3 class="font-serif text-2xl">Our Mission</h3>
+                    </div>
+                    <p class="text-gray-400 font-light leading-relaxed text-sm pr-4">
+                        To deliver uncompromising quality through a curated selection of premium global brands, supported by exceptional customer service, technical expertise, and a commitment to architectural excellence.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Core Values -->
+            <div>
+                <h3 class="font-serif text-xl mb-6 text-white/80">Core Values</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white/5 border border-white/5 p-5 hover:bg-white/10 hover:border-brand-gold/30 transition duration-300">
+                        <h4 class="font-medium text-base mb-2 flex items-center gap-2"><i data-lucide="lightbulb" class="w-4 h-4 text-brand-gold"></i> Innovation</h4>
+                        <p class="text-[11px] text-gray-400 leading-relaxed">Embracing modern technology and contemporary design trends.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/5 p-5 hover:bg-white/10 hover:border-brand-gold/30 transition duration-300">
+                        <h4 class="font-medium text-base mb-2 flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-brand-gold"></i> Integrity</h4>
+                        <p class="text-[11px] text-gray-400 leading-relaxed">Conducting business with transparency and uncompromising ethics.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/5 p-5 hover:bg-white/10 hover:border-brand-gold/30 transition duration-300">
+                        <h4 class="font-medium text-base mb-2 flex items-center gap-2"><i data-lucide="users" class="w-4 h-4 text-brand-gold"></i> Teamwork</h4>
+                        <p class="text-[11px] text-gray-400 leading-relaxed">Collaborating closely with architects, builders, and clients.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/5 p-5 hover:bg-white/10 hover:border-brand-gold/30 transition duration-300">
+                        <h4 class="font-medium text-base mb-2 flex items-center gap-2"><i data-lucide="heart" class="w-4 h-4 text-brand-gold"></i> Passion</h4>
+                        <p class="text-[11px] text-gray-400 leading-relaxed">A deep-rooted love for exceptional design and architecture.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 4: Products & Business Lines -->
+    <div class="page-container page-break p-16 flex flex-col relative">
+        <div class="absolute top-16 right-16 text-brand-gray/10 font-serif text-[120px] leading-none z-0">03</div>
+        
+        <div class="relative z-10 mb-12">
+            <p class="text-brand-gold font-semibold uppercase tracking-[0.15em] text-sm mb-2">Portfolio</p>
+            <h2 class="font-serif text-4xl text-brand-black">Business Lines</h2>
+            <div class="w-16 h-[2px] bg-brand-gold mt-6"></div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-8 flex-grow">
+            <div class="group cursor-pointer">
+                <div class="aspect-[4/3] overflow-hidden relative mb-4">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop" alt="Sanitary Ware" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                </div>
+                <h3 class="font-serif text-2xl text-brand-black mb-2">Luxury Sanitary Ware</h3>
+                <p class="text-sm text-brand-gray font-light">Premium toilets, washbasins, and bidets featuring rimless technology.</p>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="aspect-[4/3] overflow-hidden relative mb-4">
+                    <img src="https://www.roca.com/o/adaptive-media/image/311604747/311604748/desktop/Roca_Aquafy_Key-Visual_800x566.jpg" alt="Shower Systems" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                </div>
+                <h3 class="font-serif text-2xl text-brand-black mb-2">Pure Water, Pure Planet</h3>
+                <p class="text-sm text-brand-gray font-light">Thermostatic mixers, rain showers, and concealed systems.</p>
+            </div>
+            
+            <div class="group cursor-pointer">
+                <div class="aspect-[4/3] overflow-hidden relative mb-4">
+                    <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1973&auto=format&fit=crop" alt="Bathroom Accessories" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                </div>
+                <h3 class="font-serif text-2xl text-brand-black mb-2">Bathroom Accessories</h3>
+                <p class="text-sm text-brand-gray font-light">Elegant fixtures, mirrors, and storage solutions.</p>
+            </div>
+            
+            <div class="group cursor-pointer">
+                <div class="aspect-[4/3] overflow-hidden relative mb-4">
+                    <img src="https://www.parryware.in/documents/portlet_file_entry/251989004/HandShower.jpg/8e9194c5-bece-0ca1-b5af-4e3e2a334dbb" alt="Kitchen Solutions" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                </div>
+                <h3 class="font-serif text-2xl text-brand-black mb-2">Shower Solutions</h3>
+                <p class="text-sm text-brand-gray font-light">Designer sinks, smart faucets, and ergonomic culinary workspaces.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 5: Our Divisions (Part 1) -->
+    <div class="page-container page-break bg-brand-black p-12 flex flex-col relative">
+        <div class="text-center mb-6">
+            <h2 class="font-serif text-4xl text-white tracking-wider">OUR DIVISIONS</h2>
+            <div class="w-16 h-[2px] bg-brand-gold mx-auto mt-4"></div>
+        </div>
+
+        <div class="flex flex-col gap-4 flex-grow">
+            <!-- Bathroom & Wellness -->
+            <div class="relative group overflow-hidden h-[260px] w-full rounded-sm">
+                <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1920&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Bathroom & Wellness">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition duration-300"></div>
+                <div class="absolute bottom-6 left-8">
+                    <h3 class="text-white font-serif text-3xl tracking-wide">Bathroom & Wellness</h3>
+                </div>
+            </div>
+            
+            <!-- Bespoke Tiles -->
+            <div class="relative group overflow-hidden h-[260px] w-full rounded-sm">
+                <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1920&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Bespoke Tiles and Surfaces">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition duration-300"></div>
+                <div class="absolute bottom-6 left-8">
+                    <h3 class="text-white font-serif text-3xl tracking-wide">Bespoke Tiles & Surfaces</h3>
+                </div>
+            </div>
+
+            <div class="flex gap-4 h-[260px] w-full">
+                <!-- Rain Showers -->
+                <div class="relative group overflow-hidden w-1/2 h-full rounded-sm">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Rain Showers">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition duration-300"></div>
+                    <div class="absolute bottom-6 left-8">
+                        <h3 class="text-white font-serif text-2xl tracking-wide">Rain Showers</h3>
+                    </div>
+                </div>
+                
+                <!-- Japanese Kitchens -->
+                <div class="relative group overflow-hidden w-1/2 h-full rounded-sm">
+                    <img src="https://www.parryware.in/documents/portlet_file_entry/251989004/Bowl-basin.jpg/64b085f6-1091-1d16-37d2-bb3f6a64ce2d" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Japanese Engineered Kitchens">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition duration-300"></div>
+                    <div class="absolute bottom-6 left-8">
+                        <h3 class="text-white font-serif text-2xl tracking-wide">Japanese Engineered Kitchens</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 6: Our Divisions (Part 2) -->
+    <div class="page-container page-break bg-brand-black p-12 flex flex-col relative">
+        <div class="flex flex-col gap-4 flex-grow pt-4">
+            <!-- Kajaria Kitchen Flooring -->
+            <div class="relative group overflow-hidden h-[300px] w-full rounded-sm">
+                <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?q=80&w=1920&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Kajaria Kitchen Floor Tiles">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition duration-300"></div>
+                <div class="absolute bottom-6 left-8">
+                    <h3 class="text-white font-serif text-3xl tracking-wide">Kajaria Kitchen Floor Tiles</h3>
+                </div>
+            </div>
+            
+            <!-- Italian Stones -->
+            <div class="relative group overflow-hidden h-[300px] w-full rounded-sm">
+                <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=1920&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Italian Natural Stones">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition duration-300"></div>
+                <div class="absolute bottom-6 left-8">
+                    <h3 class="text-white font-serif text-3xl tracking-wide">Italian Natural Stones</h3>
+                </div>
+            </div>
+
+            <div class="flex gap-4 h-[300px] w-full">
+                <!-- Massage Tubs -->
+                <div class="relative group overflow-hidden w-1/2 h-full rounded-sm">
+                    <!-- Updated elegant outdoor spa tub image -->
+                    <img src="https://images.unsplash.com/photo-1560440021-33f9b867899d?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Massage Tubs">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition duration-300"></div>
+                    <div class="absolute bottom-6 left-8">
+                        <h3 class="text-white font-serif text-2xl tracking-wide">Massage Tubs</h3>
+                    </div>
+                </div>
+                
+                <!-- Wooden Flooring -->
+                <div class="relative group overflow-hidden w-1/2 h-full rounded-sm">
+                    <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Wooden Flooring">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition duration-300"></div>
+                    <div class="absolute bottom-6 left-8">
+                        <h3 class="text-white font-serif text-2xl tracking-wide">Wooden Flooring</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 7: Our Brands & Featured Products -->
+    <div class="page-container page-break bg-white flex flex-col relative">
+        <div class="p-16 flex-grow flex flex-col items-center justify-center">
+            <h2 class="font-serif text-4xl text-brand-black mb-16 uppercase tracking-[0.2em] text-center border-b-2 border-brand-gold pb-4 inline-block">Our Brands</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-x-10 gap-y-12 w-full max-w-4xl opacity-80 mb-8">
+                <div class="flex items-center justify-center hover:opacity-100 transition duration-300"><span class="font-serif text-2xl font-bold tracking-tight text-brand-dark"><img src="https://www.roca.com/documents/20126/346080475/roca-logo.svg" alt="Roca" class="w-[141px] h-[72px]"></span></div>
+                <div class="flex items-center justify-center hover:opacity-100 transition duration-300"><span class="font-sans text-xl font-light tracking-widest uppercase text-brand-dark text-center leading-tight"><img src="https://www.parryware.in/documents/251989004/252027648/parryware-brand.png"></span></div>
+                <div class="flex items-center justify-center hover:opacity-100 transition duration-300"><span class="font-serif text-2xl font-semibold text-brand-dark"><img src="https://www.kajariaceramics.com/images/logo-dark.svg"></span></div>
+                <div class="flex items-center justify-center hover:opacity-100 transition duration-300"><span class="font-sans text-xl font-bold tracking-wider text-blue-800"><img src="https://www.rakshapipes.com/images/mainlogodark.png"></span></div>
+                                <div class="flex items-center justify-center hover:opacity-100 transition duration-300"><span class="font-serif text-2xl font-semibold text-brand-dark"><img src="images/interhasa.png"></span></div>
+                <div class="flex items-center justify-center hover:opacity-100 transition duration-300"><span class="font-sans text-xl font-bold tracking-wider text-blue-800"><img src="images/johnson.png"></span></div>
+            </div>
+        </div>
+
+        <!-- Added Product Images: Bathtub & Shower Panel -->
+        <div class="flex h-[320px] w-full mt-auto border-t border-brand-light">
+            <div class="relative w-1/2 h-full group overflow-hidden border-r border-white/20 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Luxury Bathtub">
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-black/30 to-transparent"></div>
+                <div class="absolute bottom-8 left-10">
+                    <p class="text-brand-gold text-[10px] uppercase tracking-[0.2em] mb-2 font-semibold">Featured Collection</p>
+                    <h3 class="text-white font-serif text-3xl tracking-wide">Freestanding Bathtubs</h3>
+                </div>
+            </div>
+            <div class="relative w-1/2 h-full group overflow-hidden cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Shower Panel">
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-black/30 to-transparent"></div>
+                <div class="absolute bottom-8 left-10">
+                    <p class="text-brand-gold text-[10px] uppercase tracking-[0.2em] mb-2 font-semibold">Featured Collection</p>
+                    <h3 class="text-white font-serif text-3xl tracking-wide">Advanced Shower Panels</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 8: Our Clientele & Shower Column -->
+    <div class="page-container page-break bg-brand-light flex relative">
+        
+        <!-- Added Product Image: Shower Column -->
+        <div class="w-2/5 relative hidden md:block shadow-2xl z-10">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=800&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover" alt="Shower Column">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-black/95 via-brand-black/40 to-transparent"></div>
+            <div class="absolute bottom-12 left-10 pr-4">
+                <div class="w-10 h-[2px] bg-brand-gold mb-6"></div>
+                <p class="text-brand-gold text-[10px] uppercase tracking-[0.2em] mb-2 font-semibold">Premium Fixtures</p>
+                <h3 class="text-white font-serif text-3xl tracking-wide leading-snug">Luxury<br>Shower<br>Columns</h3>
+            </div>
+        </div>
+
+        <!-- Clientele Content -->
+        <div class="w-full md:w-3/5 p-12 lg:p-16 flex flex-col items-center justify-center relative bg-brand-light">
+            <h2 class="font-serif text-4xl text-brand-black mb-16 uppercase tracking-[0.2em] text-center border-b-2 border-brand-gold pb-4 inline-block">Our Clientele</h2>
+            
+            <div class="grid grid-cols-2 gap-5 w-full max-w-xl">
+                <div class="bg-white p-4 shadow-sm flex flex-col items-center justify-center text-center h-28 border border-gray-100 hover:shadow-md transition duration-300">
+                    <span class="font-serif text-xl font-bold text-gray-800">Marriott</span>
+                    <span class="text-[9px] uppercase tracking-widest text-brand-gray mt-1">Hotels & Resorts</span>
+                </div>
+                <div class="bg-white p-4 shadow-sm flex flex-col items-center justify-center text-center h-28 border border-gray-100 hover:shadow-md transition duration-300">
+                    <span class="font-serif text-xl font-bold text-gray-800">Hyatt</span>
+                    <span class="text-[9px] uppercase tracking-widest text-brand-gray mt-1">Regency</span>
+                </div>
+                <div class="bg-white p-4 shadow-sm flex flex-col items-center justify-center text-center h-28 border border-gray-100 hover:shadow-md transition duration-300">
+                    <span class="font-serif text-2xl text-yellow-700 tracking-widest uppercase">Taj</span>
+                </div>
+                <div class="bg-white p-4 shadow-sm flex flex-col items-center justify-center text-center h-28 border border-gray-100 hover:shadow-md transition duration-300">
+                    <span class="font-sans text-xl font-bold text-pink-700 lowercase tracking-tighter">aloft</span>
+                    <span class="text-[9px] uppercase tracking-widest text-brand-gray mt-1">Hotels</span>
+                </div>
+                <div class="bg-white p-4 shadow-sm flex flex-col items-center justify-center text-center h-28 border border-gray-100 hover:shadow-md transition duration-300">
+                    <span class="font-serif text-lg font-bold text-gray-800">Crowne Plaza</span>
+                    <span class="text-[9px] uppercase tracking-widest text-brand-gray mt-1">Hotels & Resorts</span>
+                </div>
+                <div class="bg-white p-4 shadow-sm flex flex-col items-center justify-center text-center h-28 border border-gray-100 hover:shadow-md transition duration-300">
+                    <span class="font-serif text-lg font-bold text-blue-900">Yak & Yeti</span>
+                    <span class="text-[9px] uppercase tracking-widest text-brand-gray mt-1">Kathmandu</span>
+                </div>
+                <div class="bg-white p-4 shadow-sm flex flex-col items-center justify-center text-center h-28 border border-gray-100 hover:shadow-md transition duration-300">
+                    <span class="font-serif text-lg font-bold text-gray-800">Radisson</span>
+                </div>
+                <div class="bg-white p-4 shadow-sm flex flex-col items-center justify-center text-center h-28 border border-gray-100 hover:shadow-md transition duration-300">
+                    <span class="font-serif text-lg font-bold text-gray-800">Dusit Thani</span>
+                    <span class="text-[9px] uppercase tracking-widest text-brand-gray mt-1">Hotels & Resorts</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 9: Contact -->
+    <div class="page-container bg-brand-black text-white flex relative overflow-hidden">
+        
+        <!-- Left Side: Air and Water Massage Bathtub Image -->
+        <div class="w-2/5 relative hidden md:block border-r border-white/10 z-10">
+            <img src="https://images.unsplash.com/photo-1584622781564-1d987f7333c1?q=80&w=1000&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-80" alt="Air and Water Massage Bathtub">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/20 to-transparent"></div>
+
+            <div class="absolute bottom-12 left-10 pr-8">
+                <div class="w-10 h-[2px] bg-brand-gold mb-6"></div>
+                <p class="text-brand-gold text-[10px] uppercase tracking-[0.2em] mb-2 font-semibold">Signature Collection</p>
+                <h3 class="text-white font-serif text-3xl tracking-wide leading-snug">Air & Water<br>Massage<br>Bathtubs</h3>
+            </div>
+        </div>
+
+        <!-- Right Side: Content -->
+        <div class="w-full md:w-3/5 p-12 lg:p-16 flex flex-col justify-center relative">
+            <div class="absolute -right-20 -top-20 w-96 h-96 bg-white/5 rounded-full blur-3xl z-0"></div>
+            
+            <div class="relative z-10">
+                <div class="mb-12">
+                    <p class="text-brand-gold font-semibold uppercase tracking-[0.15em] text-sm mb-4">Get in Touch</p>
+                    <h2 class="font-serif text-4xl lg:text-5xl text-white mb-6">Let's build<br>something extraordinary.</h2>
+                    <div class="w-16 h-[2px] bg-brand-gold"></div>
+                </div>
+
+                <div class="flex flex-col gap-8">
+                    <div class="flex items-start gap-4 group">
+                        <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="w-5 h-5 text-brand-gold fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm uppercase tracking-widest text-gray-400 mb-1">Headquarters</h4>
+                            <p class="text-lg font-light leading-relaxed">Sukraraj Marg Opp. of FNCCI,<br>Teku, Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 group">
+                        <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="w-5 h-5 text-brand-gold fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm uppercase tracking-widest text-gray-400 mb-1">Phone</h4>
+                            <p class="text-lg font-light tracking-wider">+977-1 5928500</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 group">
+                        <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="w-5 h-5 text-brand-gold fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm uppercase tracking-widest text-gray-400 mb-1">Email</h4>
+                            <p class="text-lg font-light">tekudeepmarketing@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 pt-8 border-t border-white/10 flex items-end justify-between">
+                    <div class="bg-white p-3 rounded-full inline-block">
+                        <img src="images/logo.png" alt="Deep Marketing Logo" class="w-32 h-auto object-contain" onerror="this.src='https://placehold.co/400x150/ffffff/111111?text=Deep+Marketing'">
+                    </div>  
+                    <div class="text-right">
+                        <p class="text-xs text-gray-400 tracking-widest uppercase">Deep Marketing Pvt Ltd</p>
+                        <p class="text-[10px] text-gray-500 font-light mt-2">&copy; 2026. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
