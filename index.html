@@ -76,11 +76,11 @@
 <body class="antialiased">
 
     <!-- Controls for web view -->
- <!--   <div class="fixed top-4 right-4 z-50 no-print flex gap-2">
+   <div class="fixed top-4 right-4 z-50 no-print flex gap-2">
         <button onclick="window.print()" class="bg-brand-black text-white px-6 py-2 rounded shadow hover:bg-gray-800 transition text-sm font-medium flex items-center gap-2">
             <i data-lucide="printer" class="w-4 h-4"></i> Print / Save PDF
         </button>
-    </div> -->
+    </div>
 
     <!-- PAGE 1: Cover Page -->
     <div class="page-container page-break flex flex-col relative">
@@ -152,8 +152,9 @@
     <!-- PAGE 3: Vision, Mission & Values -->
     <div class="page-container page-break bg-brand-black text-white flex">
         
-        <!-- Left Side: Sensor Faucet Image -->
-        <div class="w-2/5 relative border-r border-white/10">
+      <div class="flex-1 grid grid-cols-12">
+          <!-- Left Side: Sensor Faucet Image -->
+        <div class="col-span-5 relative border-r border-white/10">
             <!-- Sleek Modern Sensor Faucet Image -->
             <img src="https://manozks.github.io/deep/images/sensor-faucet.avif" alt="Modern Sensor Faucet" class="absolute inset-0 w-full h-full object-cover opacity-90">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-transparent to-transparent opacity-80"></div>
@@ -167,7 +168,7 @@
         </div>
 
         <!-- Right Side: Content -->
-        <div class="w-full md:w-3/5 p-12 md:p-16 flex flex-col justify-center relative">
+        <div class="col-span-7 p-12 md:p-16 flex flex-col justify-center relative">
             
             <div class="border-b border-white/10 pb-6 mb-10 flex justify-between items-end">
                 <div>
@@ -221,6 +222,7 @@
                 </div>
             </div>
         </div>
+      </div>
     </div>
 
     <!-- PAGE 4: Products & Business Lines -->
@@ -370,8 +372,8 @@
                 <div class="flex items-center justify-center hover:opacity-100 transition duration-300"><span class="font-sans text-xl font-light tracking-widest uppercase text-brand-dark text-center leading-tight"><img src="https://www.parryware.in/documents/251989004/252027648/parryware-brand.png"></span></div>
                 <div class="flex items-center justify-center hover:opacity-100 transition duration-300"><span class="font-serif text-2xl font-semibold text-brand-dark"><img src="https://www.kajariaceramics.com/images/logo-dark.svg"></span></div>
                 <div class="flex items-center justify-center hover:opacity-100 transition duration-300"><span class="font-sans text-xl font-bold tracking-wider text-blue-800"><img src="https://www.rakshapipes.com/images/mainlogodark.png"></span></div>
-                                <div class="flex items-center justify-center hover:opacity-100 transition duration-300"><span class="font-serif text-2xl font-semibold text-brand-dark"><img src="images/interhasa.png"></span></div>
-                <div class="flex items-center justify-center hover:opacity-100 transition duration-300"><span class="font-sans text-xl font-bold tracking-wider text-blue-800"><img src="images/johnson.png"></span></div>
+                                <div class="flex items-center justify-center hover:opacity-100 transition duration-300"><span class="font-serif text-2xl font-semibold text-brand-dark"><img src="https://manozks.github.io/deep/images/interhasa.png"></span></div>
+                <div class="flex items-center justify-center hover:opacity-100 transition duration-300"><span class="font-sans text-xl font-bold tracking-wider text-blue-800"><img src="https://manozks.github.io/deep/images/johnson.png"></span></div>
             </div>
         </div>
 
@@ -399,8 +401,9 @@
     <!-- PAGE 8: Our Clientele & Shower Column -->
     <div class="page-container page-break bg-brand-light flex relative">
         
-        <!-- Added Product Image: Shower Column -->
-        <div class="w-2/5 relative shadow-2xl z-10">
+    <div class="flex-1 grid grid-cols-12">
+            <!-- Added Product Image: Shower Column -->
+        <div class="col-span-5 relative shadow-2xl z-10">
             <img src="https://manozks.github.io/deep/images/pic1.avif" class="absolute inset-0 w-full h-full object-cover" alt="Shower Column">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-black/95 via-brand-black/40 to-transparent"></div>
             <div class="absolute bottom-12 left-10 pr-4">
@@ -411,7 +414,7 @@
         </div>
 
         <!-- Clientele Content -->
-        <div class="w-full md:w-3/5 p-12 lg:p-16 flex flex-col items-center justify-center relative bg-brand-light">
+        <div class="col-span-7 p-12 lg:p-16 flex flex-col items-center justify-center relative bg-brand-light">
             <h2 class="font-serif text-4xl text-brand-black mb-16 uppercase tracking-[0.2em] text-center border-b-2 border-brand-gold pb-4 inline-block">Our Clientele</h2>
             
             <div class="grid grid-cols-2 gap-5 w-full max-w-xl">
@@ -448,24 +451,14 @@
             </div>
         </div>
     </div>
+    </div>
 
     <!-- PAGE 9: Contact -->
     <div class="page-container bg-brand-black text-white flex relative overflow-hidden">
         
-        <!-- Left Side: Air and Water Massage Bathtub Image -->
-        <div class="w-2/5 relative border-r border-white/10 z-10">
-            <img src="https://manozks.github.io/deep/images/pic2.avif" class="absolute inset-0 w-full h-full object-cover opacity-80" alt="Air and Water Massage Bathtub">
-            <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/20 to-transparent"></div>
-
-            <div class="absolute bottom-12 left-10 pr-8">
-                <div class="w-10 h-[2px] bg-brand-gold mb-6"></div>
-                <p class="text-brand-gold text-[10px] uppercase tracking-[0.2em] mb-2 font-semibold">Signature Collection</p>
-                <h3 class="text-white font-serif text-3xl tracking-wide leading-snug">Air & Water<br>Massage<br>Bathtubs</h3>
-            </div>
-        </div>
-
-        <!-- Right Side: Content -->
-        <div class="w-full md:w-3/5 p-12 lg:p-16 flex flex-col justify-center relative">
+     <div class="flex-1 grid grid-cols-12">
+           <!-- Left Side: Air and Water Massage Bathtub Image -->
+         <div class="col-span-7 p-12 lg:p-16 flex flex-col justify-center relative">
             <div class="absolute -right-20 -top-20 w-96 h-96 bg-white/5 rounded-full blur-3xl z-0"></div>
             
             <div class="relative z-10">
@@ -518,6 +511,19 @@
                 </div>
             </div>
         </div>
+
+        <!-- Right Side: Content -->
+               <div class="col-span-5 relative border-r border-white/10 z-10">
+            <img src="https://manozks.github.io/deep/images/pic2.avif" class="absolute inset-0 w-full h-full object-cover opacity-80" alt="Air and Water Massage Bathtub">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/20 to-transparent"></div>
+
+            <div class="absolute bottom-12 left-10 pr-8">
+                <div class="w-10 h-[2px] bg-brand-gold mb-6"></div>
+                <p class="text-brand-gold text-[10px] uppercase tracking-[0.2em] mb-2 font-semibold">Signature Collection</p>
+                <h3 class="text-white font-serif text-3xl tracking-wide leading-snug">Air & Water<br>Massage<br>Bathtubs</h3>
+            </div>
+        </div>
+     </div>
     </div>
 
     <script>
